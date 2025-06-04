@@ -6,20 +6,14 @@ const BelajarModal = ({ item, onClose }) => {
     if (!item) return null
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-            <div className="bg-white rounded-lg p-6 relative max-w-xs">
-                <button
-                    onClick={onClose}
-                    className="absolute top-2 right-2 text-red-600 hover:text-red-800 font-bold text-2xl"
-                >
-                    ×
-                </button>
-                <h2 className="text-xl font-semibold mb-4 text-center">
+        <button onClick={onClose} className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="bg-white rounded-lg p-20 relative max-w-xs">
+                <h2 className="text-xl font-semibold mb-4 text-center font-major text-dark tracking-widest w-full">
                     Huruf {item.name[0].toUpperCase()} - {item.name}
                 </h2>
                 <img src={item.gif} alt={item.name} className="w-40 h-40 object-contain mx-auto" />
             </div>
-        </div>
+        </button>
     )
 }
 
@@ -62,7 +56,7 @@ const Belajar = () => {
                     <div
                         key={letter}
                         onClick={() => setSelectedItem(grouped[letter])}
-                        className="flex items-center text-2xl font-semibold justify-center size-20 bg-blue-400 hover:bg-red-500 rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white tracking-wider"
+                        className="flex items-center text-2xl font-semibold justify-center size-20 font-minor bg-ter hover:bg-dark text-dark hover:text-light hover:animate-pulse rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white tracking-wider"
                     >
                         {letter}
                     </div>

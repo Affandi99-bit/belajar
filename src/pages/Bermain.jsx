@@ -61,7 +61,7 @@ const Bermain = () => {
                     />
                 </svg>
             </Link>
-            <p className="py-5 font-semibold">Manakah yang berawalan huruf {question.letter}?</p>
+            <p className="py-5 font-semibold font-major tracking-widest text-dark animate-bounce">Manakah yang berawalan huruf {question.letter}?</p>
             <main className="">
                 <div className="flex justify-center gap-4">
                     {question.choices.map((item) => (
@@ -83,12 +83,12 @@ const Bermain = () => {
                 </div>
                 {answered && (
                     <>
-                        <p className={`mt-4 font-bold ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+                        <p className={`mt-4 font-minor font-bold tracking-widest ${isCorrect ? 'text-dark' : 'text-red-500'}`}>
                             {isCorrect ? 'Benar!' : `Salah! Jawaban benar: ${question.correctName}`}
                         </p>
                         <button
                             onClick={nextQuestion}
-                            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                            className="mt-4 px-4 py-2 rounded-lg font-minor font-bold tracking-widest text-light bg-dark"
                         >
                             Pertanyaan Berikutnya
                         </button>

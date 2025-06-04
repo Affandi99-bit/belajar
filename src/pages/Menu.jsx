@@ -6,7 +6,7 @@ const Menu = () => {
             className="bg-[url('./assets/image/bg2.webp')] bg-center bg-cover bg-no-repeat"
         >
             <Link to={"/"}
-                className="absolute top-1 left-1 rounded-full p-3 bg-mint-500 hover:p-5 transition-all ease-in-out duration-300"
+                className="absolute bg-yellow-400 top-1 left-1 rounded-full p-3 bg-mint-500 hover:p-5 transition-all ease-in-out duration-300"
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -23,11 +23,11 @@ const Menu = () => {
                 </svg>
             </Link>
             <main
-                className="w-full h-screen flex items-center justify-around flex-col md:flex-row"
+                className="w-full h-screen flex items-center justify-center gap-5 flex-col md:flex-row"
             >
                 <Link
                     to={"/belajar"}
-                    className="flex flex-col items-center justify-center w-96 h-56 bg-blue-400 hover:bg-red-500 opacity-50 hover:opacity-100 rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white font-bold text-xl tracking-wider"
+                    className="flex flex-col items-center justify-center w-56 h-56 font-minor bg-ter hover:bg-dark hover:animate-pulse rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white font-bold text-2xl text-dark hover:text-light tracking-wider"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const Menu = () => {
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        className="size-6"
+                        className="size-10"
                     >
                         <path
                             stroke-linecap="round"
@@ -48,7 +48,7 @@ const Menu = () => {
                 </Link>
                 <Link
                     to={"/bermain"}
-                    className="flex flex-col items-center justify-center w-96 h-56 bg-blue-400 hover:bg-red-500 opacity-50 hover:opacity-100 rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white font-bold text-xl tracking-wider"
+                    className="flex flex-col items-center justify-center w-56 h-56 font-minor bg-ter hover:bg-dark hover:animate-pulse rounded-xl cursor-pointer transition-all ease-in-out duration-300 border border-white font-bold text-2xl text-dark hover:text-light tracking-wider"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Menu = () => {
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        className="size-6"
+                        className="size-10"
                     >
                         <path
                             stroke-linecap="round"
