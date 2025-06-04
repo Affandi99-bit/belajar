@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@theme {
+  --color-light: #ffe6e1;
+  --color-dark: #075b5e;
+  --color-sec: #ff3f33;
+  --color-ter: #9fc87e;
+  --font-major: "Zyzol", sans-serif;
+  --font-minor: "Supersonic", sans-serif;
+}
+@font-face {
+  font-family: "Supersonic";
+  src: url(/assets/fonts/Supersonic.ttf);
+}
+@font-face {
+  font-family: "Zyzol";
+  src: url(/assets/fonts/Zyzol.otf);
+}
