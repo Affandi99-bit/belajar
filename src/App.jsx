@@ -1,34 +1,20 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home, Menu, Bermain, Belajar } from './pages'
 
 const App = () => {
   return (
-    <main className="bg-[url('./assets/image/bg1.webp')] bg-center bg-cover bg-no-repeat">
-      <main className="w-full h-screen flex flex-col items-center justify-center">
-        <p className="font-bold my-5 text-2xl tracking-widest font-minor">
-          MENGENAL ALPHABET
-        </p>
-        <a
-          href="/pages/menu.html"
-          className="p-5 bg-ter hover:bg-blue-400 rounded-full flex items-center justify-center hover:p-7 cursor-pointer transition-all ease-in-out duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
-            />
-          </svg>
-        </a>
-      </main>
-    </main >
-  )
+    <Router>
+      <Routes>
+        <Route >
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/belajar" element={<Belajar />} />
+          <Route path="/bermain" element={<Bermain />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
